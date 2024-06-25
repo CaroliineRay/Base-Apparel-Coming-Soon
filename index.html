@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    
+    <title>Base Apparel</title>
+</head>
+<body>
+
+    <div class="main_container">
+        <img class="logo" src="images/logo.svg" alt="circle logo of Base Apparel">
+        
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/hero-desktop.jpg" class="hero">
+            <img class="hero" src="images/hero-mobile.jpg" alt="woman in peach blouse on the background with plants">
+          </picture>
+
+        <div class="text_container">
+            <h1><span>We're</span><br>coming<br>soon</h1>
+            <p> Hello fellow shoppers! 
+            We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            
+            <div class="err-icon"> 
+
+            <form action="#" method="get" name="emailform" novalidate>
+            <input type="email" name="email" placeholder="Email Address" id="email-input" required>
+            <button type="button" onclick="validateEmail()" class="arrow" id="btn"><img src="images/icon-arrow.svg" id="arror-submit-button"></button>
+                       <div class="error-icon-div"><img id="err-img"src="images/icon-error.svg" alt=""></div>
+            </div>
+        </form>
+
+        <div><p id="error-msg"></p></div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
